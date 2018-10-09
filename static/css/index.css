@@ -212,7 +212,7 @@ img{
 }
 .btn{
     display: block;
-    float: left;
+    float: right;
     width: 120px;
     height: 40px;
     background-color: #ff0036;
@@ -1175,6 +1175,6 @@ img{
         width: 70%;
     }
     .btn{
-        width:10%;
+        width:15%;
     }
 }
