@@ -1,3 +1,6 @@
+body {
+     overflow-x : hidden;/*   去掉heng条*/
+}
 *{
     margin: 0;
 	padding: 0;
@@ -191,43 +194,52 @@ img{
     float: left;
 }
 .mallsearch{
-    width: 750px;
-    float: right;
+    width: 632px;
+    float: left;
+    margin:30px 50px 0;
 }
 .searchtop{
-    height: 40px;
-    width:739px;
-    border-width:2px 0 2px 2px;
-    border:solid #ff0036;
+    height: 36px;
+    width:623px;
     float: left;
+    box-sizing: border-box;
+    margin:5px 0;
 }
 #mq{
-    height: 30px;
-    width: 611px;
+    height: 36px;
+    width: 491px;
     color:#000;
     display: block;
     float: left;
-    border:none;
-    padding:5px 3px 5px 5px
+    /*border:none;*/
+    border-width:2px 0 2px 2px;
+    border:solid #ff0036;
+    /*border-radius: 5px;*/
+    padding-left: 10px;
+    box-sizing: border-box;
 }
 .btn{
     display: block;
-    float: right;
-    width: 120px;
-    height: 40px;
+    float: left;
+    width: 130px;
+    height: 36px;
+    line-height: 30px;
     background-color: #ff0036;
     color:#fff;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 5px;
-    border:none;
+    /*border:none;*/
+    border:2px solid #ff0036;
     cursor: pointer;
+    box-sizing: border-box;
 }
 .sousuo_down{
     width: 620px;
     float: left;
     font-size: 14px;
-    padding:10px 5px;
+    padding:9px 5px;
+    box-sizing: border-box;
 }
 .sousuo_down span{
     display: block;
@@ -973,7 +985,7 @@ img{
     background: #ff0036;
 }
 #topbars{
-    width: 100%;
+    width: 1260px;
     height: 50px;
     margin:0 auto;
 }
@@ -1115,12 +1127,20 @@ img{
         height: 110px;
         top:165px;
     }
-    .right_fk{
+    .rightbar .right_fk{
         display: none;
     }
-    .righttit31{
+    .rightbar .righttit31{
         display: none;
     }
+    .sjzcicon{
+        display: none;
+    }
+    .nav_container{
+        display: flex;
+        justify-content: space-around;
+    }
+
     .ppsgs,.adver,.supermarket,.supermarket_tit,.tmcs,.cz1,.cnxh,.cnxh_tit,.cnxh_container,.map_cont,.footer-copyright,.zhandian p{
         width:996px;
     }
@@ -1162,19 +1182,38 @@ img{
     .ensure{
         width:147px;
     }
+    #topbars{
+        width:990px;
+        margin: 0 auto;
+    }
     #topbars img{
-        margin-left: 10%;
+        margin-left: 100px;
     }
-    .mallsearch{
-        width:600px;
-    }
-    .searchtop{
-        width:70%;
+    .mallsearch,.searchtop{
+        width:408px;
     }
     #mq{
-        width: 70%;
+        width: 276px;
     }
     .btn{
-        width:15%;
+        width:132px;
+    }
+    .sou{
+        width:100%;
+    }
+    .sousuo_down{
+        width:410px;
+    }
+    .sousuo_down span:nth-last-child(4)~span{
+        display: none;
+    }
+    .tmallimg{
+        margin-left: 45px;
+    }
+    .tit1,.banner_left{
+        margin-left: 45px;
+    }
+    .banner11{
+        display: none;
     }
 }
